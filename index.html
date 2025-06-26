@@ -3,47 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Richieboy's Portfolio</title>
+  <title>Richieboy Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f4f4f4;
       margin: 0;
-      padding: 40px;
+      background: #f4f4f4;
+    }
+
+    section {
+      padding: 80px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px;
+      z-index: 999;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     h1 {
       color: #333;
     }
-
-    .intro {
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
-  <div class="intro">
-    <h1>Hello, I'm Richieboy</h1>
-    <p>Welcome to my personal portfolio website.</p>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">Tentang Saya</a>
+    <a href="#projects">Proyek</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home">
+    <h1>Halo, saya Richieboy 👋</h1>
+    <p>Selamat datang di website portofolio saya!</p>
+  </section>
+
+  <section id="about" style="background: #fff;">
+    <h1>Tentang Saya</h1>
     <p>Saya sedang belajar HTML, CSS, dan Web Development 🚀</p>
-    <p>
-      📄 <a href="portfolio.html">Lihat Portofolio Saya</a>
-    </p>
-  </div>
+  </section>
+
+  <section id="projects">
+    <h1>Proyek Saya</h1>
+    <p>Berikut beberapa proyek yang sudah saya kerjakan...</p>
+    <!-- Tambahkan proyek di sini -->
+  </section>
+
+  <section id="contact" style="background: #fff;">
+    <h1>Hubungi Saya</h1>
+    <p>Email: richieboy@example.com</p>
+  </section>
+
 </body>
 </html>
+
