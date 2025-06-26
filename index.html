@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Richieboy Portfolio</title>
+  <title>Richieboy | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -11,80 +12,92 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f4f4f4;
-    }
-
-    section {
-      padding: 80px 20px;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: white;
     }
 
     nav {
       position: fixed;
       top: 0;
       width: 100%;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: #000;
+      padding: 10px 0;
       display: flex;
       justify-content: center;
-      gap: 30px;
-      padding: 10px;
-      z-index: 999;
+      z-index: 1000;
     }
 
     nav a {
+      color: yellow;
       text-decoration: none;
-      color: #007acc;
+      margin: 0 20px;
       font-weight: bold;
+      transition: 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: white;
     }
 
-    h1 {
-      color: #333;
+    section {
+      min-height: 100vh;
+      padding: 100px 20px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .yellow-bg {
+      background-color: yellow;
+      color: black;
+    }
+
+    .black-bg {
+      background-color: black;
+      color: white;
+    }
+
+    h1 span {
+      color: yellow;
     }
   </style>
 </head>
 <body>
-
-  <!-- Navigation -->
   <nav>
     <a href="#home">Home</a>
-    <a href="#about">Tentang Saya</a>
-    <a href="#projects">Proyek</a>
-    <a href="#contact">Kontak</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Sections -->
-  <section id="home">
-    <h1>Halo, saya Richieboy 👋</h1>
-    <p>Selamat datang di website portofolio saya!</p>
+  <section id="home" class="yellow-bg" data-aos="fade-up">
+    <h1>Hi, I'm <span>Richieboy</span></h1>
+    <p>Welcome to my personal portfolio!</p>
   </section>
 
-  <section id="about" style="background: #fff;">
-    <h1>Tentang Saya</h1>
-    <p>Saya sedang belajar HTML, CSS, dan Web Development 🚀</p>
+  <section id="about" class="black-bg" data-aos="fade-up">
+    <h1><span>ABOUT</span> ME</h1>
+    <p>My Biodata: I am learning HTML, CSS, and Web Development 🚀</p>
   </section>
 
-  <section id="projects">
-    <h1>Proyek Saya</h1>
-    <p>Berikut beberapa proyek yang sudah saya kerjakan...</p>
-    <!-- Tambahkan proyek di sini -->
+  <section id="projects" class="yellow-bg" data-aos="fade-up">
+    <h1><span>MY</span> PROJECTS</h1>
+    <p>Project 1: Website Design<br>Project 2: Portfolio GitHub Pages</p>
   </section>
 
-  <section id="contact" style="background: #fff;">
-    <h1>Hubungi Saya</h1>
-    <p>Email: richieboy@example.com</p>
+  <section id="contact" class="black-bg" data-aos="fade-up">
+    <h1><span>CONTACT</span> ME</h1>
+    <p>Email: richieboy@example.com<br>Instagram: @richieboy</p>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
 
